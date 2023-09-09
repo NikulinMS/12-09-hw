@@ -30,10 +30,10 @@ terraform {
 
 
 provider "yandex" {
-  token = "y0_AgAAAABEoWjbAATuwQAAAADS4wxXvWtjMg8PS4KRoTr1PIANTWqz8R4"
-  cloud_id = "b1gtheioau4s71j2mu0u"
-  folder_id = "b1gtheioau4s71j2mu0u"
-  zone = "{{ zone-id }}"
+  token = "${var.yandex_cloud_auth}"
+  cloud_id = "${var.yandex_cloud_id}"
+  folder_id = "${var.yandex_folder_id}"
+  zone = "ru-central1-b"
 }
 
 
